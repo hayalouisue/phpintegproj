@@ -1,0 +1,236 @@
+/* RESET STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BASE LAYOUT */
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER #aecfcf */
+header {
+    background-color: darkslategray;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-text p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* NAVIGATION */
+.nav-tabs {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.nav-tabs li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-tabs li a:hover {
+    text-decoration: underline;
+}
+
+/* MAIN */
+/* MAIN */
+main {
+    flex: 1;
+    padding: 2rem;
+    background-color: #aecfcf;
+}
+
+/* FORM STYLING */
+main form {
+    max-width: 500px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #539191;
+    border-radius: 8px;
+    border: 1px solid black;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Section labels */
+main form label {
+    font-weight: bold;
+    color: black;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+/* Inputs */
+main form input[type="text"],
+main form input[type="password"],
+main form input[type="date"],
+main form input[type="email"] {
+    padding: 0.75rem;
+    border: 1px solid #888;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    background-color: #f9f9f9;
+}
+
+/* Grouping layout (optional for address fields) */
+main form .input-group {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+main form .input-group input {
+    flex: 1;
+    min-width: 48%;
+}
+/* Style submit button */
+main form input[type="submit"] {
+    padding: 0.6rem;
+    background-color: darkgreen;
+    font-size: 15px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+main form input[type="submit"]:hover {
+    background-color: darkslategray;
+}
+
+/* Style register button link */
+main form a button {
+    margin-top: 0.5rem;
+    padding: 0.6rem;
+    background-color: darkgreen;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+main form a button:hover {
+    background-color: green;
+    color: black;
+}
+.btn-link {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background-color: grey;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.btn-link:hover {
+    background-color: grey;
+    color: white;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    main form {
+        margin: 2rem 1rem;
+        padding: 1.5rem;
+    }
+}
+
+
+/* FOOTER */
+footer {
+    background-color: darkslategray;
+    color: white;
+    text-align: center;
+    padding: 8px;
+}
+
+
+
+
+
+/* MEDIA QUERIES*/
+
+/* SMALL SCREENS (phones) */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-text {
+        margin-bottom: 1rem;
+    }
+
+    .nav-tabs {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .nav-tabs li a {
+        font-size: 1rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+}
+
+/* MEDIUM SCREENS (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .nav-tabs {
+        gap: 1rem;
+    }
+
+    .nav-tabs li a {
+        font-size: 1.1rem;
+    }
+
+    main {
+        padding: 1.5rem;
+    }
+}
+
+/* LARGE SCREENS (desktops) */
+@media (min-width: 1025px) {
+    .nav-tabs li a {
+        font-size: 1.1rem;
+    }
+
+    main {
+        padding: 2rem 4rem;
+    }
+}
